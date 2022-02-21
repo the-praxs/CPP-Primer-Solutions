@@ -6,12 +6,9 @@
 #include <iostream>
 
 int main() {
-    int sum = 0, value = 0;
-    
-    // read until end-of-file, calculating a running total of all values read
-    while (std::cin >> value)
-        sum += value;   // equivalent to sum = sum + value
-        
-    std::cout << "Sum is: " << sum << std::endl;
+    int sum = 0;
+    std :: cout << "Enter numbers: " << std :: endl;
+    for(int number = 0; std :: cin >> number, number != 0; sum += number);
+    std::cout << "Sum = " << sum << std::endl;
     return 0;
 }
